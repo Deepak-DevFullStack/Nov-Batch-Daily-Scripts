@@ -21,3 +21,5 @@ const s3 = {
         ABC : '12 Months'
     }
 }
+
+console.log(s1, typeof s1)
