@@ -24,3 +24,11 @@ console.log('Even Array is:',even);// [ 22, 44, 66 ]
 //filter():
 let odd = numbers.filter((ele)=> ele%2 !== 0 )
 console.log('Odd Elements are:',odd);//[ 11, 33, 55 ]
+
+
+//WAP to to find and print all even numbers from n array
+//WAP to find and add all odd elements from an array into new array.
+//WAP to find sum of all elements present in an array
+//WAP to find Product of all elements present in an array.
+//WAP to add +5 to each element of an array and print it.
+//WAP to find squuare of each element present in an array
