@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>document.getElementById()</title>
+    <style>
+        .addBackground{
+            color: white;background-color: black;
+            padding: 15px;width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p id="para">Hello</p>
+    <button onClick="chnageclr()">Click</button>
+    <script>
+        var toggle = false; 
+        function chnageclr() {
+            var target_ele = document.getElementById('para');
+            if (!toggle) {
+                // target_ele.style.color = 'white';
+                // target_ele.style.backgroundColor = 'black';
+                target_ele.classList.add('addBackground');
+                toggle = true; 
+            } else {
+                target_ele.classList.remove('addBackground');
+                toggle = false; 
+            }
+        }
+    </script>
+</body>
+</html>

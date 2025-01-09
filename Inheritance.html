@@ -1,0 +1,31 @@
+<script>
+    // Parent class
+class Product {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    display() {
+        console.log(`Book Name is: ${this.name}, costs is : ${this.price}.`);
+    }
+}
+
+// Child class
+class Book extends Product {
+    constructor(name, price, author) {
+        super(name, price); // Call the parent class's constructor
+        this.author = author; // Add a new property
+    }
+
+    display() {
+        super.display(); // Call the parent method
+        console.log(`Written by ${this.author}.`);
+    }
+}
+
+b1 = new Book('JS Basics',450,'Priya')
+b1.display()
+
+
+</script>

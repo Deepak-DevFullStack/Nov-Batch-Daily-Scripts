@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>querySelector()</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        var target_heading = document.querySelector('h1'); //<h1></h1>
+        target_heading.classList.add('head'); //<h1 class = 'head'></h1>
+        target_heading.textContent= 'Hello' ; //<h1 class = 'head'>Hello</h1>
+        console.log(target_heading);
+    </script>
+</body>
+</html>
+<!--
+1. querySelector() will always target the first element which is mayching with the given
+selector.-->

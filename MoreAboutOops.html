@@ -1,0 +1,22 @@
+<script>
+    /*
+    1. name and salary are the parameters of constructor used to initialize  instance 
+    variables (Emp_name, Emp_sal).
+    2.Instance variables will declared inside the Constructor.
+    */
+    class Employee{
+        constructor(name, salary){
+            this.Emp_name = name,
+            this.Emp_sal = salary
+        }
+        work(){
+            console.log(this.Emp_name, 'is working');
+        }
+    }
+
+    e1 = new Employee('Akash',35000);
+    e1.work();
+    e2 = new Employee('Ankit',45000);
+    e2.work()
+    
+</script>
