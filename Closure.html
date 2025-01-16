@@ -1,0 +1,30 @@
+<!-- pre-requisite: Lexical Scope:
+
+Closure: A closure in JS is a Function that 'remembers' the variables
+from its outer scope even after the outer function has finished 
+Execution.
+-->
+<script>
+   function outer(){
+    let count = 0;
+
+    return {
+        increment(){
+            console.log(++count);
+        },
+        decrement(){
+            console.log(--count);
+        },
+        reset(){
+            count = 0;
+            console.log(count);
+        }
+    }
+   }
+   counter = outer()
+   counter.increment()
+   counter.decrement()
+   counter.reset()
+
+    
+</script>
