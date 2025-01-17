@@ -1,0 +1,46 @@
+<script>
+    function placeOrder(item,callback){
+        setTimeout(()=>{
+            console.log('Order Placed for',item); 
+            callback();
+        },3000)
+    }
+
+    function makePayment(amount,callback){
+        setTimeout(()=>{
+            console.log('Payment Received:',amount);
+            callback();
+        },4000)
+    }
+
+    function confirmOrder(callback){
+        setTimeout(()=>{
+            console.log('Order Confirmed...!!');
+            callback();
+        },1000)
+    }
+
+    function sendEmail(){
+        setTimeout(()=>{
+            console.log('Successfully Order Placed Email sent to Customer')
+        },1000)
+    }
+
+    // All Tasks are Asynchronous Task.
+    placeOrder('Shirts',()=>{
+        makePayment(2500,()=>{
+            confirmOrder(()=>{
+                sendEmail()
+            })
+        })
+    })
+
+    // Some other Task which are not depend on:  placeOrder, makePayment, confirmOrder,
+    // sendEmail Task
+    console.log('Task Next 1') 
+
+  
+
+
+    
+</script>
